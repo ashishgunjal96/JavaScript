@@ -1,0 +1,11 @@
+getData = (a,b,callback)=>{
+  callback()
+  console.log('getData')
+}
+
+fn =()=>{
+  console.log('callback')
+}
+
+getData(1,2,fn)
+
