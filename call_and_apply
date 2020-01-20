@@ -1,0 +1,24 @@
+var obj1={
+  fullname:function(arg){
+    return this.name +" "+arg
+}
+}
+var obj ={
+  name:"ashish",
+  address:"pune"
+}
+
+console.log(obj1.fullname.call(obj,"test"))
+
+
+var obj2={
+  fullname:function(...arg){
+    return this.name +" "+arg
+}
+}
+var obj3 ={
+  name:"ashish",
+  address:"pune"
+}
+
+console.log(obj2.fullname.apply(obj,['1','2']))
